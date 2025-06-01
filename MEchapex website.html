@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechapex Technologies LLP - Engineering Design & HR Solutions</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #e74c3c;
+            --accent-color: #3498db;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tagline {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        
+        nav {
+            background-color: var(--dark-color);
+            padding: 0.5rem 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav li {
+            margin: 0 1rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: var(--accent-color);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        section {
+            margin-bottom: 3rem;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        h1, h2, h3 {
+            color: var(--primary-color);
+        }
+        
+        h2 {
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 5rem 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .hero h1 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+            margin-top: 1rem;
+        }
+        
+        .btn:hover {
+            background-color: #c0392b;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background-color: var(--light-color);
+            padding: 0;
+            border-radius: 8px;
+            transition: transform 0.3s;
+            overflow: hidden;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .service-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        
+        .service-content {
+            padding: 1.5rem;
+        }
+        
+        .service-card h3 {
+            color: var(--secondary-color);
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        
+        .values-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .value-item {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .value-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .value-img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .contact-card {
+            background-color: var(--light-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header and Navigation remain unchanged -->
+    <header>
+        <div class="logo">MECHAPEX</div>
+        <div class="tagline">Partner in Technology Leadership</div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#training">Industries</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="hero">
+        <h1>Engineering Excellence Across Industries</h1>
+        <p>Providing innovative design solutions and HR services to automotive, defense, and industrial sectors</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+    
+    <div class="container">
+        <!-- About Us section remains unchanged -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Mechapex Technologies LLP started with a vision to serve the design departments of Automotive, Defense, Agriculture, Farm Industry, and Civil Structural design works. We have grown from a small startup to a trusted partner for tier-1 companies, offering comprehensive engineering solutions and HR consultancy services.</p>
+            
+            <p>At Mechapex, we believe: <em>"If you have the energy to conceive new ideas, utilize that energy in opening up fresh avenues in the area of system engineering and build of new products."</em></p>
+            
+            <h3>Our Core Principles</h3>
+            <div class="values-list">
+                <div class="value-item">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Vision" class="value-img">
+                    <h3>Our Vision</h3>
+                    <p>To be a leader in Engineering Services Provider and HR solutions worldwide!</p>
+                </div>
+                <div class="value-item">
+                    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Mission" class="value-img">
+                    <h3>Our Mission</h3>
+                    <p>To bridge the gap between end customers and our clients through engineering expertise.</p>
+                </div>
+                <div class="value-item">
+                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Purpose" class="value-img">
+                    <h3>Our Purpose</h3>
+                    <p>Drive industries through innovation and superior product designs with continuous improvement.</p>
+                </div>
+            </div>
+            
+            <h3>Our Values</h3>
+            <div class="values-list">
+                <div class="value-item">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Passion for design" class="value-img">
+                    <h3>Passion for Design</h3>
+                    <p>We live and breathe engineering excellence in every project we undertake.</p>
+                </div>
+                <div class="value-item">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Integrity" class="value-img">
+                    <h3>Integrity</h3>
+                    <p>We uphold the highest ethical standards in all our business dealings.</p>
+                </div>
+                <div class="value-item">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Value People" class="value-img">
+                    <h3>Value People</h3>
+                    <p>Our team is our greatest asset and we invest in their growth.</p>
+                </div>
+                <div class="value-item">
+                    <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Constant Improvement" class="value-img">
+                    <h3>Constant Improvement</h3>
+                    <p>We never stop learning and evolving to deliver better solutions.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Updated Services Section with Images -->
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="HR Consultancy" class="service-img">
+                    <div class="service-content">
+                        <h3>HR Consultancy & Staffing</h3>
+                        <ul>
+                            <li>Permanent staffing solutions</li>
+                            <li>Management hiring</li>
+                            <li>HR practice development</li>
+                            <li>Deputation at client locations</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1581093057305-3ec4d0a4d12a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Engineering Design" class="service-img">
+                    <div class="service-content">
+                        <h3>Engineering Design Services</h3>
+                        <ul>
+                            <li>Concept to detailed design</li>
+                            <li>Mechanical engineering calculations</li>
+                            <li>3D modeling and drawings</li>
+                            <li>CAD data migration</li>
+                            <li>Reverse engineering</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="CAE Analysis" class="service-img">
+                    <div class="service-content">
+                        <h3>CAE & Virtual Validation</h3>
+                        <ul>
+                            <li>FEA and structural analysis</li>
+                            <li>Computational Fluid Dynamics</li>
+                            <li>Non-linear analysis</li>
+                            <li>Thermal engineering</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1605152276897-4f618f831968?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Quality Management" class="service-img">
+                    <div class="service-content">
+                        <h3>Quality & Manufacturing</h3>
+                        <ul>
+                            <li>Quality lifecycle management</li>
+                            <li>APQP/PPAP documentation</li>
+                            <li>Jigs and fixtures design</li>
+                            <li>Tool design</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="After-Market Support" class="service-img">
+                    <div class="service-content">
+                        <h3>After-Market Support</h3>
+                        <ul>
+                            <li>Change management</li>
+                            <li>Field problem troubleshooting</li>
+                            <li>Service manuals creation</li>
+                            <li>Parts catalogues</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Specialized Training" class="service-img">
+                    <div class="service-content">
+                        <h3>Specialized Training</h3>
+                        <ul>
+                            <li>Automotive domain training</li>
+                            <li>CAD/CAE software training</li>
+                            <li>GD&T and process planning</li>
+                            <li>Case studies and tear-downs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <h3>Why Choose Mechapex?</h3>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Experienced Team" class="service-img">
+                    <div class="service-content">
+                        <h3><i class="fas fa-users"></i> Experienced Team</h3>
+                        <p>Senior management with 20+ years experience and executives with 10+ years bringing industry best practices.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Reduced Development Time" class="service-img">
+                    <div class="service-content">
+                        <h3><i class="fas fa-clock"></i> Reduced Development Time</h3>
+                        <p>On-demand resource allocation and round-the-clock support lets clients focus on business expansion.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Quality Focus" class="service-img">
+                    <div class="service-content">
+                        <h3><i class="fas fa-award"></i> Quality Focus</h3>
+                        <p>Robust processes, checklists and systems ensure all steps are followed before final delivery.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Competitive Pricing" class="service-img">
+                    <div class="service-content">
+                        <h3><i class="fas fa-hand-holding-usd"></i> Competitive Pricing</h3>
+                        <p>We offer our services at very competitive prices and hourly rates without compromising quality.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Creative Solutions" class="service-img">
+                    <div class="service-content">
+                        <h3><i class="fas fa-lightbulb"></i> Creative Solutions</h3>
+                        <p>Young and agile executive team that adapts quickly to changes and enhances product value.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Training and Contact sections remain unchanged -->
+        <section id="training">
+            <h2>Industries We Serve</h2>
+            <p>We transform fresh engineering graduates into industry-ready professionals through comprehensive training programs:</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Automotive Domain</h3>
+                    <ul>
+                        <li>Concept Vehicle Development (CVD)</li>
+                        <li>DFMEA processes</li>
+                        <li>8D problem-solving</li>
+                        <li>Vehicle tear-down studies</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>CAD Software</h3>
+                    <ul>
+                        <li>CATIA V5</li>
+                        <li>Creo/Pro-E</li>
+                        <li>Siemens NX</li>
+                        <li>SolidWorks</li>
+                        <li>Product structure maintenance</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>CAE Software</h3>
+                    <ul>
+                        <li>Hypermesh</li>
+                        <li>ANSYS</li>
+                        <li>Abacus</li>
+                        <li>Element type selection</li>
+                        <li>Result interpretation</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>Manufacturing</h3>
+                    <ul>
+                        <li>Geometric Dimensioning & Tolerancing</li>
+                        <li>Process planning</li>
+                        <li>Tolerance stack-up analysis</li>
+                        <li>Manufacturing process understanding</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3>Head Office</h3>
+                    <p>263/2-1, 6th C-Cross<br>
+                    First Floor, Kaggadasapura<br>
+                    CV Raman Nagar<br>
+                    Bangalore - 560093</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Leadership Team</h3>
+                    <p><strong>Savita Patil</strong><br>
+                    Founder & CEO</p>
+                    
+                    <p><strong>Neela B Dematti</strong><br>
+                    Co-Founder & CEO</p>
+                    
+                    <p><strong>Nritiya Dave</strong><br>
+                    Head HR and Business Development</p>
+                    
+                    <p><strong>Chandrasekhar Kondaguli</strong><br>
+                    Head of Design Department</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Get In Touch</h3>
+                    <p>For career opportunities:<br>
+                    <a href="mailto:career@mechapex.com">career@mechapex.com</a></p>
+                    
+                    <p>For service inquiries:<br>
+                    <a href="mailto:info@mechapex.com">info@mechapex.com</a></p>
+                    
+                    <p>For training programs:<br>
+                    <a href="mailto:training@mechapex.com">training@mechapex.com</a></p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Mechapex Technologies LLP. All Rights Reserved.</p>
+        <p>Partner in Technology Leadership</p>
+    </footer>
+</body>
+</html>
